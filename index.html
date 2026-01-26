@@ -3,131 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sultan Services | Global Guest Posting Authority</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Sultan Services | Global SEO & Guest Posting Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #FFD700; --dark-bg: #0f0f0f; --card-bg: #1a1a1a; --text-gray: #b0b0b0; }
-        body { font-family: 'Poppins', sans-serif; margin: 0; background: #050505; color: #fff; scroll-behavior: smooth; }
+        :root { --gold: #FFD700; --dark-bg: #050505; --card-bg: #111; --text-color: #e0e0e0; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background: var(--dark-bg); color: var(--text-color); scroll-behavior: smooth; }
         
-        /* Header & Navigation */
-        header { background: rgba(15, 15, 15, 0.95); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
-        .sultan-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-icon { background: linear-gradient(135deg, #FFD700, #B8860B); color: #000; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 24px; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
-        .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 22px; color: var(--gold); letter-spacing: 1px; }
-        .logo-text span { color: #fff; font-size: 14px; font-weight: 400; display: block; }
-        nav a { color: #fff; text-decoration: none; margin-left: 25px; font-size: 14px; font-weight: 500; transition: 0.3s; text-transform: uppercase; }
+        /* Navbar */
+        header { background: rgba(0,0,0,0.9); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #222; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box { background: linear-gradient(135deg, #FFD700, #B8860B); color: #000; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 24px; border-radius: 10px; }
+        .logo-text { color: var(--gold); font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; line-height: 1; }
+        .logo-text span { color: #fff; font-size: 13px; font-weight: 400; display: block; margin-top: 4px; }
+        nav a { color: #fff; text-decoration: none; margin-left: 25px; font-size: 14px; transition: 0.3s; }
         nav a:hover { color: var(--gold); }
 
-        /* Hero Section */
-        .hero { height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%); padding: 0 10%; }
-        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: 4rem; margin-bottom: 15px; background: linear-gradient(to right, #fff, var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.2rem; color: var(--text-gray); max-width: 700px; margin-bottom: 30px; }
-        .hero-btns .btn { padding: 15px 35px; border-radius: 50px; font-weight: bold; text-decoration: none; transition: 0.4s; display: inline-block; margin: 10px; }
+        /* Hero */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%; background: radial-gradient(circle at center, #111 0%, #050505 100%); }
+        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px; line-height: 1.2; }
+        .hero h1 span { color: var(--gold); }
+        .hero p { max-width: 750px; font-size: 1.1rem; color: #aaa; margin-bottom: 35px; }
+        .btn { padding: 15px 35px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s; }
         .btn-gold { background: var(--gold); color: #000; }
-        .btn-gold:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); }
+        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3); }
 
-        /* Stats Section (Intro Blogs replacement) */
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 60px 8%; margin-top: -50px; }
-        .stat-card { background: var(--card-bg); padding: 30px; border-radius: 15px; border: 1px solid #333; text-align: center; transition: 0.3s; }
-        .stat-card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .stat-card h3 { color: var(--gold); font-size: 2rem; margin: 0; }
-        .stat-card p { color: var(--text-gray); font-size: 14px; margin-top: 10px; }
-
-        /* Services Section */
-        .section-padding { padding: 80px 8%; text-align: center; }
-        .section-title { font-size: 2.5rem; margin-bottom: 50px; color: #fff; }
-        .section-title span { color: var(--gold); }
+        /* Small Blogs / Intro Cards Section */
+        .section { padding: 80px 8%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; }
+        .section-title h2 span { color: var(--gold); }
+        
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .blog-card { background: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid #222; transition: 0.4s; }
+        .blog-card:hover { border-color: var(--gold); transform: translateY(-10px); }
+        .blog-card h3 { color: var(--gold); margin-bottom: 15px; font-size: 1.4rem; }
+        .blog-card p { font-size: 0.95rem; color: #999; line-height: 1.7; }
 
         /* Inventory Table */
-        .table-container { background: var(--card-bg); padding: 20px; border-radius: 20px; overflow-x: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        table { width: 100%; border-collapse: collapse; min-width: 600px; }
-        th { background: #111; color: var(--gold); padding: 20px; text-align: left; text-transform: uppercase; font-size: 13px; }
-        td { padding: 20px; border-bottom: 1px solid #222; color: var(--text-gray); }
-        tr:hover { background: rgba(255, 215, 0, 0.05); }
-        .badge { background: rgba(255, 215, 0, 0.1); color: var(--gold); padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+        .table-wrap { background: #111; border-radius: 20px; overflow-x: auto; border: 1px solid #222; }
+        table { width: 100%; border-collapse: collapse; min-width: 700px; }
+        th { background: #1a1a1a; color: var(--gold); padding: 20px; text-align: left; }
+        td { padding: 18px 20px; border-bottom: 1px solid #222; }
 
-        /* WhatsApp Floating */
-        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; transition: 0.3s; }
-        .wa-float:hover { transform: scale(1.1); }
+        /* Contact Form */
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; background: #111; padding: 50px; border-radius: 30px; border: 1px solid #222; }
+        .contact-info h3 { font-size: 2rem; color: var(--gold); margin-bottom: 20px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-size: 14px; color: #bbb; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; background: #050505; border: 1px solid #333; color: #fff; border-radius: 8px; box-sizing: border-box; }
+        .form-group input:focus { border-color: var(--gold); outline: none; }
+        
+        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 30px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); z-index: 1000; }
 
-        footer { padding: 50px 8%; border-top: 1px solid #222; text-align: center; color: var(--text-gray); }
+        footer { text-align: center; padding: 50px; border-top: 1px solid #222; color: #666; font-size: 14px; }
+        
+        @media (max-width: 768px) { .contact-container { grid-template-columns: 1fr; } .hero h1 { font-size: 2.5rem; } }
     </style>
 </head>
 <body>
 
-<a href="https://wa.me/923066572333" class="wa-float" target="_blank">W</a>
-
 <header>
-    <a href="#" class="sultan-logo">
-        <div class="logo-icon">S</div>
+    <a href="#" class="logo">
+        <div class="logo-box">S</div>
         <div class="logo-text">SULTAN <span>SERVICES</span></div>
     </a>
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">Performance</a>
+        <a href="#services">Services</a>
         <a href="#inventory">Websites</a>
-        <a href="https://wa.me/923066572333">Contact</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<div class="hero" id="home">
-    <h1>Dominate Search Results</h1>
-    <p>We provide high-quality Guest Posting and SEO Content services that help brands rank higher, drive organic traffic, and build authority in their niche.</p>
-    <div class="hero-btns">
-        <a href="#inventory" class="btn btn-gold">View Inventory</a>
-        <a href="https://wa.me/923066572333" class="btn" style="border: 1px solid #fff; color: #fff;">Contact Us</a>
-    </div>
-</div>
+<section class="hero" id="home">
+    <h1>High Authority <span>Guest Posting</span> For SEO Success</h1>
+    <p>Get premium backlinks from niche-relevant websites. We help agencies and businesses rank on the first page of Google with high-quality content and safe link building.</p>
+    <a href="#inventory" class="btn btn-gold">Browse Inventory</a>
+</section>
 
-<div class="stats-grid" id="about">
-    <div class="stat-card">
-        <h3>500+</h3>
-        <p>Premium Websites in Inventory</p>
+<section class="section" id="services">
+    <div class="section-title">
+        <h2>Why Choose <span>Sultan Services?</span></h2>
     </div>
-    <div class="stat-card">
-        <h3>100%</h3>
-        <p>Index Guarantee in Google</p>
-    </div>
-    <div class="stat-card">
-        <h3>High DA/DR</h3>
-        <p>Sites with 50+ Domain Authority</p>
-    </div>
-    <div class="stat-card">
-        <h3>24/7</h3>
-        <p>Active Support for Clients</p>
-    </div>
-</div>
-
-<section class="section-padding" id="inventory">
-    <h2 class="section-title">Premium <span>Website Inventory</span></h2>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Category / Niche</th>
-                    <th>DA Score</th>
-                    <th>DR Score</th>
-                    <th>Traffic</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td><span class="badge">Technology</span></td><td>60+</td><td>55+</td><td>50k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
-                <tr><td><span class="badge">Health & Fitness</span></td><td>55+</td><td>50+</td><td>30k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
-                <tr><td><span class="badge">Business & Finance</span></td><td>65+</td><td>60+</td><td>80k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
-                <tr><td><span class="badge">Fashion & Lifestyle</span></td><td>50+</td><td>45+</td><td>20k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
-                <tr><td><span class="badge">Digital Marketing</span></td><td>58+</td><td>52+</td><td>40k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
-                <tr><td><span class="badge">Real Estate</span></td><td>52+</td><td>48+</td><td>15k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
-                <tr><td><span class="badge">Travel & Food</span></td><td>55+</td><td>50+</td><td>25k+</td><td><a href="https://wa.me/923066572333" style="color:var(--gold)">Check List</a></td></tr>
-            </tbody>
-        </table>
+    <div class="grid-3">
+        <div class="blog-card">
+            <h3>Premium Link Quality</h3>
+            <p>We don't deal with PBNs or low-quality sites. All our websites have real traffic and high Domain Authority (DA 50+) to ensure maximum SEO impact.</p>
+        </div>
+        <div class="blog-card">
+            <h3>Guaranteed Indexing</h3>
+            <p>Every post we publish is crafted to be Google-friendly. We guarantee 100% indexing of your links within a few days of publication.</p>
+        </div>
+        <div class="blog-card">
+            <h3>Niche Relevancy</h3>
+            <p>Whether you are in Tech, Health, Finance, or Real Estate, we have a curated list of sites that match your niche perfectly.</p>
+        </div>
     </div>
 </section>
 
-<footer>
-    <p>&copy; 2026 Sultan Services. Elevating Your Digital Presence Globally.</p>
-    <p style="font-size: 12px; margin-top: 10px;">Email: info@sultanservices.com | WhatsApp: +92 306 6572333</p>
-</footer>
-
-</body>
-</html>
+<section class="section" id="inventory">
+    <div class="section-title">
+        <h2>Live <span>Websites Inventory</span></h2>
+    </div>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Niche</th>
+                    <th>DA</th>
+                    <th>DR</th>
+                    <th>Traffic (Monthly)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Tech & Digital</td><td>65+</td><td>60+</td><td>80k+</td><td style="color:var(--gold)">Available</td></tr>
+                <tr><td>Business & Finance</td><td>70+</td><td>65+</td><td>150k+</td><td style="color:var(--gold)">Available</td></tr>
+                <tr><td>Health & Medical</td><td>55+
