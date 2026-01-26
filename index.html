@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sultan Services | Premium Guest Posting & Content Writing</title>
+    <title>Sultan Services | Guest Posting & Content Writing</title>
     <style>
         :root { --primary-color: #f1c40f; --dark-color: #1a1a1a; --light-grey: #f9f9f9; }
-        body { font-family: 'Poppins', sans-serif; margin: 0; line-height: 1.6; color: #333; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; scroll-behavior: smooth; }
         
         header { background: var(--dark-color); color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
 
-        /* Professional HTML/CSS Logo Design */
-        .sultan-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; cursor: pointer; }
-        .logo-icon { background: linear-gradient(135deg, #f1c40f, #d4ac0d); color: #1a1a1a; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 22px; border-radius: 8px; box-shadow: 0 4px 10px rgba(241, 196, 15, 0.3); }
+        /* Professional HTML/CSS Logo */
+        .sultan-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon { background: linear-gradient(135deg, #f1c40f, #d4ac0d); color: #1a1a1a; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 22px; border-radius: 8px; }
         .logo-text { font-weight: 800; font-size: 22px; color: #f1c40f; letter-spacing: 1px; line-height: 1; }
         .logo-text span { color: #fff; font-weight: 400; font-size: 14px; display: block; margin-top: 2px; }
         
@@ -22,7 +22,7 @@
         .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1350&q=80'); background-size: cover; height: 60vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
         .hero h1 { font-size: 3rem; margin-bottom: 10px; }
         
-        .btn { padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; margin: 10px; display: inline-block; border: none; }
+        .btn { padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; margin: 10px; display: inline-block; }
         .btn-primary { background: var(--primary-color); color: black; }
         .btn-secondary { background: transparent; border: 2px solid white; color: white; }
 
@@ -41,10 +41,77 @@
         footer { background: var(--dark-color); color: white; text-align: center; padding: 40px 10%; }
         
         /* WhatsApp Floating Button */
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 14px; box-shadow: 2px 2px 3px #999; z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<a href="https://wa.me/923066572333?text=Hello Sultan Services, I am interested in your services." class="whatsapp-float" target="_blank">
-    <svg width="35" height="35" fill="white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48
+<a href="https://wa.me/923066572333" class="whatsapp-float" target="_blank">Chat</a>
+
+<header>
+    <div class="sultan-logo">
+        <div class="logo-icon">S</div>
+        <div class="logo-text">SULTAN <span>SERVICES</span></div>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div id="home" class="hero">
+    <h1>Sultan Services</h1>
+    <p>Premium Guest Posting & SEO Content Solutions</p>
+    <div>
+        <a href="https://wa.me/923066572333" class="btn btn-primary">WhatsApp Us</a>
+        <a href="#inventory" class="btn btn-secondary">View Inventory</a>
+    </div>
+</div>
+
+<section id="services">
+    <div class="section-title">
+        <h2>Our Services</h2>
+    </div>
+    <div class="content-grid">
+        <div class="content-card">
+            <h3>Article Writing</h3>
+            <p>High-quality, SEO-optimized articles that boost rankings.</p>
+        </div>
+        <div class="content-card">
+            <h3>Guest Posting</h3>
+            <p>Permanent backlinks from high-authority niche sites.</p>
+        </div>
+    </div>
+</section>
+
+<section id="inventory" style="background: var(--light-grey);">
+    <div class="section-title">
+        <h2>Website Inventory</h2>
+    </div>
+    <table class="inventory-table">
+        <thead>
+            <tr>
+                <th>Niche</th>
+                <th>DA</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tech / Business</td>
+                <td>50+</td>
+                <td><strong>$45</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer id="contact">
+    <p>Contact: info@sultanservices.com | WhatsApp: +92 306 6572333</p>
+    <p>&copy; 2026 Sultan Services. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
