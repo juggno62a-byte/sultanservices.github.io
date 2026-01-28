@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan Services | SEO Experts</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background: #000; color: #fff; }
+        header { background: #111; padding: 30px; text-align: center; border-bottom: 3px solid #FFD700; }
+        .container { padding: 40px 5%; max-width: 1100px; margin: auto; }
+        h2 { color: #FFD700; text-align: center; font-size: 30px; }
+        
+        /* 3 Equal Boxes Fix */
+        .box-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .service-box { background: #1a1a1a; padding: 25px; border-radius: 12px; border: 1px solid #333; width: 300px; flex-grow: 1; text-align: center; border-top: 5px solid #FFD700; }
+        .service-box h3 { color: #FFD700; }
+        .btn { background: #FFD700; color: #000; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: block; margin-top: 20px; }
+
+        /* 10 Niches Table Fix */
+        .table-wrap { overflow-x: auto; margin: 30px 0; background: #111; border-radius: 12px; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #222; }
+        th { background: #FFD700; color: #000; }
+        .badge { background: #222; color: #FFD700; padding: 5px 10px; border-radius: 4px; font-size: 12px; border: 1px solid #FFD700; }
+
+        .form-box { background: #1a1a1a; padding: 30px; border-radius: 15px; margin-top: 40px; }
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; background: #000; color: #fff; border: 1px solid #444; border-radius: 5px; box-sizing: border-box; }
+        .s-btn { background: #FFD700; color: #000; border: none; padding: 15px; width: 100%; font-weight: bold; cursor: pointer; border-radius: 5px; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color:#FFD700; margin:0;">SULTAN SERVICES</h1>
+    <p>Premium Guest Posting & Writing</p>
+</header>
+
+<div class="container">
+    <div id="services">
+        <h2>Article Writing Portion</h2>
+        <div class="box-grid">
+            <div class="service-box"><h3>SEO Content</h3><p>Rank-ready articles for your niche.</p></div>
+            <div class="service-box"><h3>Guest Posting</h3><p>High authority backlinks writing.</p></div>
+            <div class="service-box">
+                <h3>Order Now</h3>
+                <p>Hire experts for your content needs.</p>
+                <a href="#contact" class="btn">Hire a Writer</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="niches">
+        <br><br><h2>10+ Premium Website Niches</h2>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Niche Category</th><th>DA</th><th>DR</th><th>Traffic</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="badge">Technology</span></td><td>60+</td><td>55+</td><td>100k+</td></tr>
+                    <tr><td><span class="badge">Business & SaaS</span></td><td>65+</td><td>62+</td><td>85k+</td></tr>
+                    <tr><td><span class="badge">Health</span></td><td>55+</td><td>50+</td><td>40k+</td></tr>
+                    <tr><td><span class="badge">Finance</span></td><td>70+</td><td>65+</td><td>150k+</td></tr>
+                    <tr><td><span class="badge">Fashion</span></td><td>52+</td><td>50+</td><td>60k+</td></tr>
+                    <tr><td><span class="badge">Real Estate</span></td><td>58+</td><td>54+</td><td>20k+</td></tr>
+                    <tr><td><span class="badge">Education</span></td><td>60+</td><td>55+</td><td>110k+</td></tr>
+                    <tr><td><span class="badge">Travel</span></td><td>54+</td><td>50+</td><td>35k+</td></tr>
+                    <tr><td><span class="badge">Home Decor</span></td><td>55+</td><td>52+</td><td>30k+</td></tr>
+                    <tr><td><span class="badge">Automotive</span></td><td>50+</td><td>45+</td><td>25k+</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="contact" class="form-box">
+        <h2>Contact Us</h2>
+        <p style="text-align:center;">WhatsApp: +92 306 6572333</p>
+        <form action="https://formspree.io/f/xlgboeqo" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="4" placeholder="Order details" required></textarea>
+            <button type="submit" class="s-btn">SEND MESSAGE</button>
+        </form>
+    </div>
+</div>
+
+<footer style="text-align:center; padding:30px; color:#555;">&copy; 2026 Sultan Services</footer>
+
+</body>
+</html>
