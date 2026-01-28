@@ -3,76 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sultan Services | SEO Experts</title>
+    <title>Sultan Services | Professional SEO</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #000; color: #fff; margin: 0; padding: 0; }
-        .header { background-color: #111; padding: 40px 20px; text-align: center; border-bottom: 3px solid #FFD700; }
-        .container { padding: 40px 5%; max-width: 1100px; margin: auto; }
-        h1, h2 { color: #FFD700; text-align: center; }
+        :root { --gold: #FFD700; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #000; color: #fff; }
         
-        /* 3 Equal Boxes Fix */
-        .services-row { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: stretch; margin-top: 30px; }
-        .service-item { background: #1a1a1a; padding: 30px; border-radius: 12px; border: 1px solid #333; flex: 1; min-width: 280px; text-align: center; border-top: 5px solid #FFD700; display: flex; flex-direction: column; justify-content: space-between; }
-        .hire-btn { background: #FFD700; color: #000; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 20px; display: block; }
+        /* Background Hero Image */
+        .hero-section { 
+            height: 400px; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200'); 
+            background-size: cover; 
+            background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+            border-bottom: 4px solid var(--gold);
+        }
 
-        /* 10 Niches Table */
-        .table-container { overflow-x: auto; margin-top: 40px; background: #111; border-radius: 12px; border: 1px solid #333; }
+        .container { padding: 40px 5%; max-width: 1100px; margin: auto; }
+        .grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .card { background: #111; padding: 25px; border-radius: 10px; border-top: 5px solid var(--gold); flex: 1; min-width: 280px; text-align: center; }
+        
+        /* Table Style */
+        .table-wrap { overflow-x: auto; background: #111; border-radius: 10px; margin-top: 40px; }
         table { width: 100%; border-collapse: collapse; min-width: 600px; }
         th, td { padding: 15px; text-align: left; border-bottom: 1px solid #222; }
-        th { background: #FFD700; color: #000; }
-        .niche-badge { color: #FFD700; border: 1px solid #FFD700; padding: 4px 10px; border-radius: 5px; font-size: 13px; font-weight: bold; }
+        th { background: var(--gold); color: #000; }
 
-        /* Contact Section */
-        .contact-box { background: #1a1a1a; padding: 40px; border-radius: 15px; margin-top: 50px; border: 1px solid #333; }
-        input, textarea { width: 100%; padding: 15px; margin: 10px 0; background: #000; color: #fff; border: 1px solid #444; border-radius: 8px; box-sizing: border-box; }
-        .send-btn { background: #FFD700; color: #000; border: none; padding: 18px; width: 100%; font-weight: bold; cursor: pointer; border-radius: 8px; font-size: 18px; }
+        /* Floating WhatsApp Button */
+        .wa-btn {
+            position: fixed; bottom: 20px; right: 20px;
+            background: #25D366; color: #fff; padding: 12px 20px;
+            border-radius: 30px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5); z-index: 1000;
+        }
+
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; background: #222; color: #fff; border: 1px solid #444; border-radius: 5px; box-sizing: border-box; }
+        .submit-btn { background: var(--gold); color: #000; padding: 15px; width: 100%; border: none; font-weight: bold; cursor: pointer; border-radius: 5px; }
     </style>
 </head>
 <body>
-    <div class="header"><h1>SULTAN SERVICES</h1><p>Premium Guest Posting & Writing</p></div>
+
+    <div class="hero-section">
+        <h1 style="font-size: 45px; color: var(--gold); margin: 0;">SULTAN SERVICES</h1>
+        <p style="font-size: 20px;">SEO Articles & High Quality Guest Posting</p>
+    </div>
+
     <div class="container">
-        <h2>Article Writing Portion</h2>
-        <div class="services-row">
-            <div class="service-item"><h3>SEO Articles</h3><p>Human-written content that ranks on the first page.</p></div>
-            <div class="service-item"><h3>Guest Posts</h3><p>High-quality outreach articles for backlinks.</p></div>
-            <div class="service-item">
-                <h3>Order Now</h3>
-                <p>Hire professional writers for your business.</p>
-                <a href="#contact" class="hire-btn">Hire a Writer</a>
-            </div>
+        <div class="grid">
+            <div class="card"><h3>SEO Writing</h3><p>Human-written content for your blog.</p></div>
+            <div class="card"><h3>Guest Posts</h3><p>High DA backlinks at best prices.</p></div>
+            <div class="card"><h3>24/7 Support</h3><p>Chat with us on WhatsApp anytime.</p></div>
         </div>
 
-        <br><br>
-        <h2>Our 10 Premium Niches</h2>
-        <div class="table-container">
+        <h2 style="text-align: center; color: var(--gold); margin-top: 50px;">Our Premium Niches</h2>
+        <div class="table-wrap">
             <table>
-                <thead><tr><th>Niche Category</th><th>DA</th><th>DR</th><th>Traffic</th></tr></thead>
+                <thead><tr><th>Niche</th><th>DA</th><th>DR</th><th>Traffic</th></tr></thead>
                 <tbody>
-                    <tr><td><span class="niche-badge">Technology</span></td><td>60+</td><td>58+</td><td>100k+</td></tr>
-                    <tr><td><span class="niche-badge">Business</span></td><td>65+</td><td>62+</td><td>85k+</td></tr>
-                    <tr><td><span class="niche-badge">Health</span></td><td>55+</td><td>52+</td><td>45k+</td></tr>
-                    <tr><td><span class="niche-badge">Finance</span></td><td>70+</td><td>65+</td><td>150k+</td></tr>
-                    <tr><td><span class="niche-badge">Fashion</span></td><td>52+</td><td>50+</td><td>60k+</td></tr>
-                    <tr><td><span class="niche-badge">Real Estate</span></td><td>58+</td><td>54+</td><td>20k+</td></tr>
-                    <tr><td><span class="niche-badge">Education</span></td><td>60+</td><td>55+</td><td>110k+</td></tr>
-                    <tr><td><span class="niche-badge">Travel</span></td><td>54+</td><td>50+</td><td>35k+</td></tr>
-                    <tr><td><span class="niche-badge">Home Decor</span></td><td>55+</td><td>52+</td><td>30k+</td></tr>
-                    <tr><td><span class="niche-badge">Automotive</span></td><td>50+</td><td>45+</td><td>25k+</td></tr>
+                    <tr><td>Technology</td><td>60+</td><td>55+</td><td>100k+</td></tr>
+                    <tr><td>Business</td><td>65+</td><td>60+</td><td>85k+</td></tr>
+                    <tr><td>Health</td><td>55+</td><td>50+</td><td>45k+</td></tr>
+                    <tr><td>Finance</td><td>70+</td><td>65+</td><td>150k+</td></tr>
+                    <tr><td>Fashion</td><td>52+</td><td>50+</td><td>60k+</td></tr>
+                    <tr><td>Real Estate</td><td>58+</td><td>54+</td><td>20k+</td></tr>
+                    <tr><td>Education</td><td>60+</td><td>55+</td><td>110k+</td></tr>
+                    <tr><td>Travel</td><td>54+</td><td>50+</td><td>35k+</td></tr>
+                    <tr><td>Home Decor</td><td>55+</td><td>52+</td><td>30k+</td></tr>
+                    <tr><td>Automotive</td><td>50+</td><td>45+</td><td>25k+</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <div id="contact" class="contact-box">
-            <h2>Contact Us</h2>
-            <p style="text-align: center;">WhatsApp: +92 306 6572333</p>
+        <div id="contact" style="background:#111; padding:30px; border-radius:15px; margin-top:40px;">
+            <h2 style="color:var(--gold);">Contact Us</h2>
             <form action="https://formspree.io/f/xlgboeqo" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Order details" required></textarea>
-                <button type="submit" class="send-btn">SEND MESSAGE</button>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="4" placeholder="Your requirements" required></textarea>
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
             </form>
         </div>
     </div>
-    <footer style="text-align:center; padding:40px; color:#555;">&copy; 2026 Sultan Services</footer>
+
+    <a href="https://wa.me/923066572333" class="wa-btn" target="_blank">Chat on WhatsApp</a>
+
 </body>
 </html>
